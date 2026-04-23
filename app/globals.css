@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1 { @apply font-display text-h1; }
+  h2 { @apply font-display text-h2; }
+  h3 { @apply font-display text-h3; }
+  h4 { @apply font-display text-h4; }
+
+  p  { @apply text-body; }
+}
