@@ -1,13 +1,3 @@
-export default function MarketingLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <>
-      {/* <Navbar /> */}
-      {children}
-      {/* <Footer /> */}
-    </>
-  );
+export default function MarketingLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

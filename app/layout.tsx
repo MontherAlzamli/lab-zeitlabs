@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import { Navbar } from "../components/nav/navbar";
 import "./globals.css";
+import { Footer } from "../components/layout/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,14 +22,14 @@ export const metadata: Metadata = {
   description: "Open edX learning platform",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
