@@ -32,7 +32,7 @@ export default {
         h2: ["3.125rem",  { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "500" }],
         h3: ["1.5rem",    { lineHeight: "1.4", letterSpacing: "-0.02em", fontWeight: "500" }],
         h4: ["1.25rem",   { lineHeight: "1.4", letterSpacing: "-0.02em", fontWeight: "500" }],
-        body:    ["1rem",      { lineHeight: "1.6", letterSpacing: "-0.01em" }],
+        body:    ["16px",      { lineHeight: "1.6", letterSpacing: "-0.01em" }],
         "body-sm": ["0.875rem", { lineHeight: "1.5", letterSpacing: "-0.01em" }],
       },
     },
