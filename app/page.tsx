@@ -3,7 +3,6 @@ import { BenefitsSection } from "@/components/sections/benefits-section";
 import { FeaturedCourses } from "@/components/sections/featured-courses";
 import { CommunitySection } from "@/components/sections/community-section";
 import { TopicsSection } from "@/components/sections/topics-section";
-import { CTABanner } from "@/components/sections/cta-banner";
 
 export default function HomePage() {
   return (
@@ -11,9 +10,8 @@ export default function HomePage() {
       <Hero />
       <BenefitsSection />
       <FeaturedCourses />
-      {/* <CommunitySection />
+      <CommunitySection />
       <TopicsSection />
-      <CTABanner /> */}
     </main>
   );
 }

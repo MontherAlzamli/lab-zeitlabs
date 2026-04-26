@@ -35,7 +35,7 @@ export function Navbar({ className }: NavbarProps) {
               >
                 <Link
                   href={link.href}
-                  className="text-body font-medium text-foreground leading-6 no-underline"
+                  className="font-inter text-body font-medium text-foreground leading-6 no-underline"
                 >
                   {link.label}
                 </Link>
@@ -48,13 +48,13 @@ export function Navbar({ className }: NavbarProps) {
         <div className="hidden md:flex items-center justify-center px-0 py-2">
           <a
             href="https://apps.lab.zeitlabs.com/authn/login"
-            className="inline-flex items-center font-sans font-[500] text-body py-[11px] px-[22px] rounded-[24px] text-foreground bg-transparent hover:opacity-60 transition-opacity duration-200 cursor-pointer"
+            className="inline-flex items-center font-inter font-[500] text-body py-[11px] px-[22px] rounded-[24px] text-foreground bg-transparent hover:opacity-60 transition-opacity duration-200 cursor-pointer"
           >
             Login
           </a>
           <a
             href="https://apps.lab.zeitlabs.com/authn/register"
-            className="btn-register inline-flex items-center font-sans font-[500] text-body py-[11px] px-[22px] rounded-[24px] text-white cursor-pointer transition-all duration-200"
+            className="btn-register inline-flex items-center font-inter font-[500] text-body py-[11px] px-[22px] rounded-[24px] text-white cursor-pointer transition-all duration-200"
           >
             Register
           </a>
@@ -78,7 +78,7 @@ export function Navbar({ className }: NavbarProps) {
             >
               <Link
                 href={link.href}
-                className="text-body font-medium text-foreground"
+                className="font-inter text-body font-medium text-foreground"
               >
                 {link.label}
               </Link>
@@ -87,13 +87,13 @@ export function Navbar({ className }: NavbarProps) {
           <div className="flex gap-3 pt-2 border-t border-border">
             <a
               href="https://apps.lab.zeitlabs.com/authn/login"
-              className="inline-flex items-center font-sans font-medium text-body py-3 px-[22px] rounded-[24px] text-foreground bg-transparent hover:opacity-60 transition-opacity duration-200"
+              className="inline-flex items-center font-inter font-medium text-body py-3 px-[22px] rounded-[24px] text-foreground bg-transparent hover:opacity-60 transition-opacity duration-200"
             >
               Login
             </a>
             <a
               href="https://apps.lab.zeitlabs.com/authn/register"
-              className="btn-register inline-flex items-center font-sans font-medium text-body py-3 px-[22px] rounded-[24px] text-white transition-all duration-200"
+              className="btn-register inline-flex items-center font-inter font-medium text-body py-3 px-[22px] rounded-[24px] text-white transition-all duration-200"
             >
               Register
             </a>

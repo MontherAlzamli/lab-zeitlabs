@@ -24,8 +24,9 @@ export default {
         foreground: "rgb(0 0 0)",               // primary text
       },
       fontFamily: {
-        sans:    ["var(--font-inter)",   "ui-sans-serif", "system-ui", "sans-serif"],
+        sans:    ["var(--font-poppins)", "ui-sans-serif", "system-ui", "sans-serif"],
         display: ["var(--font-poppins)", "ui-sans-serif", "system-ui", "sans-serif"],
+        inter:   ["var(--font-inter)",   "sans-serif"],
       },
       fontSize: {
         h1: ["4.5rem",    { lineHeight: "1.2", letterSpacing: "-0.04em", fontWeight: "600" }],

@@ -83,7 +83,7 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
       <div className="relative z-10 max-w-[1250px] mx-auto px-6">
         <div className="text-center mb-12">
           <SectionLabel
-            className="w-[142px]"
+            className="w-fit whitespace-nowrap"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" className="size-5">
                 <path d="M176,207.24a119,119,0,0,0,16-7.73V240a8,8,0,0,1-16,0Zm11.76-88.43-56-29.87a8,8,0,0,0-7.52,14.12L171,128l17-9.06Zm64-29.87-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V130.67L171,128l-43,22.93L43.83,106l0,0L25,96,128,41.07,231,96l-18.78,10-.06,0L188,118.94a8,8,0,0,1,4,6.93v73.64a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12Z" />
@@ -92,7 +92,7 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
             label="Our Courses"
           />
           <h2 className="text-foreground text-[42px] mt-4 mb-4">Featured Courses</h2>
-          <p className=" max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto">
             Our courses provide the essential knowledge to build and manage online learning
             platforms, with a special focus on Open edX and best practices in digital education
           </p>
