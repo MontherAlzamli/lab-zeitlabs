@@ -143,13 +143,15 @@
 
 /* ─── View Courses button hover ──────────────────────────────────────────── */
 .btn-view-courses {
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.25s ease, color 0.25s ease;
   color: rgb(0, 0, 0);
   fill: rgb(0, 0, 0);
 }
 
 .btn-view-courses:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
+  background:
+    radial-gradient(ellipse 55% 80% at 0% 50%, rgba(255, 255, 255, 0.18) 0%, transparent 70%),
+    rgb(0, 0, 0);
   border-color: rgb(0, 0, 0);
 }
 
