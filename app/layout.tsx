@@ -29,6 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        {/* Fixed frosted glass bar — bottom of every page */}
+        <div className="fixed bottom-0 left-0 right-0 z-[9998] h-16 pointer-events-none" style={{ background: "linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%)", backdropFilter: "blur(4px)", WebkitBackdropFilter: "blur(4px)", maskImage: "linear-gradient(to top, black 20%, transparent 100%)", WebkitMaskImage: "linear-gradient(to top, black 20%, transparent 100%)" }} />
       </body>
     </html>
   );

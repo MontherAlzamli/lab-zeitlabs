@@ -16,10 +16,10 @@ export function Footer({ className }: FooterProps) {
       }}
     >
       {/* CTA */}
-      <div className="pb-9 pt-26">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <Logo className="justify-center mb-8" />
-          <h2 className="font-sans text-[42px] font-medium tracking-[-0.03em] leading-[1.2em] text-foreground mb-6">
+      <div className="pb-9 pt-12 md:pt-26">
+        <div className="max-w-3xl mx-auto px-6 text-center flex flex-col items-center justify-center">
+          <Logo className="justify-center mb-8" imageClassName="w-[169px] h-[33px] md:h-8 md:w-auto" />
+          <h2 className="font-sans max-w-[340px] md:max-w-full text-[32px] md:text-[42px] font-medium tracking-[-0.01em] md:tracking-[-0.03em] leading-[1.2em] text-foreground mb-6">
             Grow your Knowledge about Online Learning with zeitlabs now
           </h2>
           <Button
@@ -42,8 +42,8 @@ export function Footer({ className }: FooterProps) {
 
       {/* Bottom bar */}
       <div className="py-6 flex flex-col items-center justify-center">
-        <div className="flex items-center justify-center gap-15 flex-wrap px-6">
-          <div className="flex items-center gap-15">
+        <div className="flex items-center justify-center gap-10  md:gap-15 flex-wrap px-6">
+          <div className="flex items-center gap-5  md:gap-15">
           <Link href="/courses" className="font-inter text-[16px] font-medium tracking-[-0.01em] leading-[1.2em] text-foreground hover:text-foreground/70 transition-colors">
             Courses
           </Link>
@@ -63,7 +63,7 @@ export function Footer({ className }: FooterProps) {
           </Button>
           </div>
         </div>
-        <div className="mx-6 mt-6 pt-6 pb-8 w-[1080px]" style={{ borderTop: "1px solid rgb(92, 100, 112)" }}>
+        <div className="mx-6 mt-6 pt-6 pb-4 md:pb-8 w-full max-w-[1080px]" style={{ borderTop: "1px solid rgb(92, 100, 112)" }}>
           <p className="font-inter text-[16px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground text-center" style={{ opacity: 0.9 }}>
             zeitlabs Lab © 2025. Designed by zeitlabs
           </p>
