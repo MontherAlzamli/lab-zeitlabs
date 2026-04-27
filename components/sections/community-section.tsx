@@ -22,7 +22,7 @@ export function CommunitySection({ className }: CommunitySectionProps) {
             }
             label="Our Programs"
           />
-          <h2 className="text-foreground text-[42px] mt-4 mb-4">Featured Tracks</h2>
+          <h2 className="font-[Poppins] lg:font-sans text-[24px] lg:text-[42px] font-medium tracking-[-0.01em] lg:tracking-normal text-center text-foreground mt-4 mb-4">Featured Tracks</h2>
           <p className="max-w-2xl mx-auto">
             Get discount on high value multi-course programs and upgrade your Open edX experience
             from the experts.
@@ -30,11 +30,23 @@ export function CommunitySection({ className }: CommunitySectionProps) {
         </div>
 
         <div className="bg-white p-8 lg:px-24 lg:py-0 overflow-hidden">
-          <div className="flex flex-col lg:flex-row items-center gap-14">
-            {/* Text content */}
-            <div className="flex-1">
-              <h3 className="font-sans text-[42px] font-medium tracking-[-0.03em] leading-[1.2em] text-left text-foreground mb-3 max-w-sm">Open edX Instructor track</h3>
-              <p className="font-sans text-[42px] font-medium tracking-[-0.03em] leading-[1.2em] text-left text-[#9a72ff]">$250</p>
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-14">
+            {/* Framer asset image — top on mobile, right on desktop */}
+            <div className="flex-[1.1] mx-[-70px] overflow-hidden">
+              <Image
+                src="https://framerusercontent.com/images/gEdanOdb3qFYjAq7uDYmc3tfOU.jpg"
+                alt="Open edX Instructor track"
+                width={5000}
+                height={3333}
+                sizes="min(max(100vw - 40px, 1px), 1000px)"
+                className="rounded-2xl"
+              />
+            </div>
+
+            {/* Text content — bottom on mobile (centered), left on desktop */}
+            <div className="flex-1 w-full flex flex-col items-center lg:items-start text-center lg:text-left">
+              <h3 className="font-[Poppins] lg:font-sans text-[26px] lg:text-[42px] font-medium tracking-[-0.01em] lg:tracking-[-0.03em] leading-[1.2em] text-foreground mb-3 max-w-sm">Open edX Instructor track</h3>
+              <p className="font-[Poppins] lg:font-sans text-[22px] lg:text-[42px] font-medium tracking-[-0.01em] lg:tracking-[-0.03em] leading-[1.2em] text-[#9a72ff]">$250</p>
               <StarRating rating={5} starSize={32} color="#ffd633" className="mb-5" />
               <p className="mb-3 max-w-sm">
                 Learn how to design, author, and manage engaging courses on Open edX using Studio,
@@ -49,18 +61,6 @@ export function CommunitySection({ className }: CommunitySectionProps) {
               >
                 Get Started
               </Button>
-            </div>
-
-            {/* Framer asset image */}
-            <div className="flex-[1.1] mx-[-70px] overflow-hidden">
-              <Image
-                src="https://framerusercontent.com/images/gEdanOdb3qFYjAq7uDYmc3tfOU.jpg"
-                alt="Open edX Instructor track"
-                width={5000}
-                height={3333}
-                sizes="min(max(100vw - 40px, 1px), 1000px)"
-                className="rounded-2xl"
-              />
             </div>
           </div>
         </div>

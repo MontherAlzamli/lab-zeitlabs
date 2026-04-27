@@ -14,31 +14,28 @@ export function MenuIcon({ isOpen = false, onClick, className }: MenuIconProps) 
       onClick={onClick}
       aria-label={isOpen ? "Close menu" : "Open menu"}
       className={cn(
-        "p-1.5 rounded-md text-foreground hover:bg-surface transition-colors cursor-pointer",
+        "size-10 rounded-md text-foreground hover:bg-surface transition-colors cursor-pointer flex flex-col items-center justify-center gap-[5px] mr-[-3px]",
         className,
       )}
     >
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="size-5"
-      >
-        {isOpen ? (
-          <>
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </>
-        ) : (
-          <>
-            <line x1="4" y1="8" x2="20" y2="8" />
-            <line x1="4" y1="16" x2="20" y2="16" />
-          </>
+      <span
+        className={cn(
+          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
+          isOpen && "translate-y-[8px] rotate-45"
         )}
-      </svg>
+      />
+      <span
+        className={cn(
+          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300",
+          isOpen && "opacity-0 scale-x-0"
+        )}
+      />
+      <span
+        className={cn(
+          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
+          isOpen && "-translate-y-[8px] -rotate-45"
+        )}
+      />
     </button>
   );
 }

@@ -25,10 +25,10 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
     <section
       className={cn("py-14 relative bg-white overflow-hidden", className)}
       style={{
-        background: "radial-gradient(ellipse 70% 85% at 50% 45%, #ebe8ff 0%, #ffffff 75%)",
+        background: "radial-gradient(ellipse 140% 70% at 50% 60%, #e2deff 0%, #ffffff 65%)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-12 md:px-20 text-center">
         <SectionLabel
           icon={
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" className="size-5">
@@ -38,18 +38,18 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
           label="Boost Your Skills"
         />
 
-        <h2 className="text-foreground mt-6 mb-4 text-[42px] max-w-xl mx-auto font-display">
+        <h2 className="text-foreground mt-6 mb-4 text-[32px] md:text-[42px] max-w-xl mx-auto font-display font-medium tracking-[-0.01em] leading-[1.2em]">
           Courses Designed for Educators, Technologists &amp; Innovators
         </h2>
 
-        <p className=" max-w-2xl mx-auto mb-12">
+        <p className="max-w-2xl mx-auto mb-12 font-inter text-[16px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground">
           Our courses provide the essential knowledge to build and manage online learning
           platforms, with a special focus on Open edX and best practices in digital education
         </p>
 
-        <div className="flex items-center gap-45 mb-8 w-full max-w-8xl mx-auto">
+        <div className="flex items-center gap-4 md:gap-12 mb-8 w-full max-w-8xl mx-auto">
           <div className="flex-1 h-px bg-foreground/30" />
-          <p className="text-body text-[#48464c] whitespace-nowrap">
+          <p className="text-body text-[#48464c] md:whitespace-nowrap text-center max-w-[180px] md:max-w-none">
             Our partners in the education endeavor
           </p>
           <div className="flex-1 h-px bg-foreground/30" />
@@ -64,7 +64,7 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
                 alt={partner.alt}
                 width={partner.width}
                 height={partner.height}
-                className="h-9 w-auto object-contain grayscale flex-shrink-0"
+                className="h-10 w-auto object-contain grayscale flex-shrink-0"
               />
             ))}
           </div>

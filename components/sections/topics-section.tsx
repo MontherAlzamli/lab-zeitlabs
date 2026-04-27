@@ -8,9 +8,9 @@ export interface TopicsSectionProps {
 
 export function TopicsSection({ className }: TopicsSectionProps) {
   return (
-    <section className={cn("py-24 px-38 bg-[#f1f5f9]", className)}>
-      <div className="max-w-[1100px] mx-auto px-6">
-        <div className="text-center mb-16">
+    <section className={cn("py-15 md:py-24 md:px-38 bg-[#f1f5f9]", className)}>
+      <div className="max-w-[1100px] mx-auto px-[20px]">
+        <div className="text-center mb-10 md:mb-16">
           <SectionLabel
             className="w-fit whitespace-nowrap"
             icon={
@@ -25,17 +25,17 @@ export function TopicsSection({ className }: TopicsSectionProps) {
             }
             label="Accreditation"
           />
-          <h2 className="text-foreground text-[41px] mt-4 mb-4">
+          <h2 className="font-[Poppins] md:font-sans text-[36px] md:text-[41px] font-medium md:font-normal tracking-[-0.01em] md:tracking-normal text-center text-foreground mt-4 mb-4">
             Certify &amp; Acknowledge
           </h2>
-          <p className="max-w-[650px] mx-auto tracking-[-0.01em] leading-[1.6em] text-center text-foreground">
+          <p className="max-w-[300px] md:max-w-[650px] mx-auto tracking-[-0.01em] leading-[1.6em] text-center text-foreground">
             Choose from an array of certificate designs and layouts, and leave
             your learners with proof and display of their newly acquired
             achievements
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-[58px]">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-[58px]">
           {/* OOSE OPSWAT */}
           <div className="flex flex-col gap-6">
             <div

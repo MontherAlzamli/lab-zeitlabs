@@ -78,7 +78,7 @@ export interface FeaturedCoursesProps {
 
 export function FeaturedCourses({ className }: FeaturedCoursesProps) {
   return (
-    <section className={cn("relative py-8 overflow-hidden", className)}>
+    <section className={cn("relative py-16 overflow-hidden", className)}>
 
       <div className="relative z-10 max-w-[1250px] mx-auto px-6">
         <div className="text-center mb-12">
@@ -91,8 +91,8 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
             }
             label="Our Courses"
           />
-          <h2 className="text-foreground text-[42px] mt-4 mb-4">Featured Courses</h2>
-          <p className="max-w-2xl mx-auto">
+          <h2 className="text-foreground text-[32px] md:text-[42px] mt-4 mb-4 font-display font-medium tracking-[-0.01em] leading-[1.2em]">Featured Courses</h2>
+          <p className="max-w-2xl mx-auto font-inter text-[16px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground">
             Our courses provide the essential knowledge to build and manage online learning
             platforms, with a special focus on Open edX and best practices in digital education
           </p>
