@@ -20,20 +20,20 @@ export function MenuIcon({ isOpen = false, onClick, className }: MenuIconProps) 
     >
       <span
         className={cn(
-          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
-          isOpen && "translate-y-[8px] rotate-45"
+          "block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
+          isOpen && "translate-y-[7px] rotate-45"
         )}
       />
       <span
         className={cn(
-          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300",
+          "block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300",
           isOpen && "opacity-0 scale-x-0"
         )}
       />
       <span
         className={cn(
-          "block h-[3px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
-          isOpen && "-translate-y-[8px] -rotate-45"
+          "block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 origin-center",
+          isOpen && "-translate-y-[7px] -rotate-45"
         )}
       />
     </button>

@@ -11,7 +11,7 @@ export function SectionLabel({ icon, label, className }: SectionLabelProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2.5 bg-white border border-border rounded-[60px] pr-4 py-0 h-8 w-[168px] overflow-visible",
+        "inline-flex items-center gap-2.5 bg-white border border-border rounded-[60px] pr-4 py-0 h-8 overflow-visible",
         className,
       )}
     >
@@ -20,7 +20,9 @@ export function SectionLabel({ icon, label, className }: SectionLabelProps) {
           {icon}
         </span>
       </span>
-      <span className="text-[13.5px] font-normal text-foreground">{label}</span>
+      <span className="font-inter text-[14px] font-normal text-black tracking-[-0.01em] leading-[24px] no-underline normal-case">
+        {label}
+      </span>
     </span>
   );
 }

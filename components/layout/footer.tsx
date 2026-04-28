@@ -9,7 +9,7 @@ export interface FooterProps {
 
 export function Footer({ className }: FooterProps) {
   return (
-    <footer className={cn("relative bg-white overflow-hidden", className)}>
+    <footer className={cn("relative bg-white overflow-hidden md:pt-14 lg:pt-4 xl:pt-7", className)}>
       {/* Background gradient blobs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
@@ -39,14 +39,14 @@ export function Footer({ className }: FooterProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1080px] mx-auto px-5 md:px-10 xl:px-0 pt-12 md:pt-20 pb-10 flex flex-col gap-16 md:gap-16">
+      <div className="relative z-10 max-w-[1080px] mx-auto px-5 md:px-10 xl:px-0 pt-12 md:pt-20 pb-10 xl:pb-5 flex flex-col gap-16 md:gap-16 lg:gap-14">
         {/* CTA */}
-        <div className="flex flex-col items-center gap-6 max-w-[840px] mx-auto w-full">
+        <div className="flex flex-col items-center md:mb-4 xl:mb-0 gap-6 max-w-[840px] mx-auto w-full">
           <Logo
             className="justify-center"
-            imageClassName="w-[169px] h-[33px] md:h-8 md:w-auto"
+            imageClassName=" md:h-8 md:w-auto xl:mb-[7px]"
           />
-          <div className="flex flex-col items-center gap-6 w-full">
+          <div className="flex flex-col items-center gap-6 w-full xl:mb-1">
             <h2 className="font-sans max-w-[340px] md:max-w-full text-[32px] md:text-[42px] font-medium tracking-[-0.01em] md:tracking-[-0.03em] leading-[1.2em] text-foreground text-center">
               Grow your Knowledge about Online Learning with zeitlabs now
             </h2>
@@ -70,7 +70,7 @@ export function Footer({ className }: FooterProps) {
 
         {/* Bottom bar */}
         <div className="flex flex-col gap-6">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-15 flex-wrap">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 lg:gap-15 flex-wrap">
             <div className="flex items-center gap-5 md:gap-15">
               <Link
                 href="/courses"
@@ -91,7 +91,7 @@ export function Footer({ className }: FooterProps) {
               </span>
               <Button
                 size="sm"
-                className="font-inter text-[16px] font-medium tracking-[-0.01em] leading-[1.2em] text-foreground rounded-[100px] border border-foreground bg-transparent hover:bg-foreground hover:text-white transition-colors w-[114px] h-[44px]"
+                className="font-inter text-[16px] font-medium tracking-[-0.01em] leading-[1.2em] text-foreground rounded-[100px] border border-foreground bg-transparent hover:bg-transparent transition-colors w-[114px] h-[44px]"
               >
                 Notify Me
               </Button>
@@ -99,12 +99,11 @@ export function Footer({ className }: FooterProps) {
           </div>
 
           <div
-            className="pt-6 pb-2"
+            className="pt-6 lg:pb-5 xl:pb-10 -mx-5 md:-mx-10 min-[1001px]:mx-0"
             style={{ borderTop: "1px solid rgb(92, 100, 112)" }}
           >
             <p
-              className="font-inter text-[16px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground text-center"
-              style={{ opacity: 0.9 }}
+              className="font-inter text-[16px] font-normal not-italic tracking-[-0.01em] leading-[1.6em] text-foreground text-center opacity-90 no-underline normal-case"
             >
               zeitlabs Lab © 2025. Designed by zeitlabs
             </p>
