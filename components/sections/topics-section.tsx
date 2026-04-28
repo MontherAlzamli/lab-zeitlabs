@@ -35,7 +35,7 @@ export function TopicsSection({ className }: TopicsSectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-1 gap-14 md:gap-[58px]">
+        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-14 md:gap-[58px]">
           {/* OOSE OPSWAT */}
           <div className="flex flex-col gap-6">
             <div
