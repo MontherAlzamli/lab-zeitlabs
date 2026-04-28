@@ -8,9 +8,9 @@ export interface TopicsSectionProps {
 
 export function TopicsSection({ className }: TopicsSectionProps) {
   return (
-    <section className={cn("py-15 md:py-24 md:px-38 bg-[#f1f5f9]", className)}>
+    <section className={cn("py-15 md:pb-22 md:pt-22 md:px-6 bg-[#f1f5f9]", className)}>
       <div className="max-w-[1100px] mx-auto px-[20px]">
-        <div className="text-center mb-10 md:mb-16">
+        <div className="text-center mb-14 sm:mb-14 md:mb-16">
           <SectionLabel
             className="w-fit whitespace-nowrap"
             icon={
@@ -25,17 +25,17 @@ export function TopicsSection({ className }: TopicsSectionProps) {
             }
             label="Accreditation"
           />
-          <h2 className="font-[Poppins] md:font-sans text-[36px] md:text-[41px] font-medium md:font-normal tracking-[-0.01em] md:tracking-normal text-center text-foreground mt-4 mb-4">
+          <h2 className="font-[Poppins] md:font-sans text-[32px] md:text-[41px] font-medium tracking-[-0.01em]  text-center text-foreground mt-4 mb-4">
             Certify &amp; Acknowledge
           </h2>
-          <p className="max-w-[300px] md:max-w-[650px] mx-auto tracking-[-0.01em] leading-[1.6em] text-center text-foreground">
+          <p className="max-w-[600px] min-[400px]:max-w-full mb-8 mx-auto tracking-normal text-center text-foreground">
             Choose from an array of certificate designs and layouts, and leave
             your learners with proof and display of their newly acquired
             achievements
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-[58px]">
+        <div className="grid grid-cols-2 gap-14 md:gap-[58px]">
           {/* OOSE OPSWAT */}
           <div className="flex flex-col gap-6">
             <div
@@ -57,7 +57,7 @@ export function TopicsSection({ className }: TopicsSectionProps) {
               <h4 className="font-inter text-2xl font-semibold tracking-[-0.7px] leading-[1.5em] text-left text-[rgb(0,17,34)] mt-[6px] mb-5">
                 OOSE OPSWAT
               </h4>
-              <p className="font-inter text-xl font-medium tracking-[-0.5px] leading-[1.4em] text-left text-[rgb(136,136,136)] max-w-[380px]">
+              <p className="font-inter text-xl font-medium tracking-[-0.5px] leading-[1.4em] text-left text-[rgb(136,136,136)] max-w-[600px] md:max-w-[380px]">
                 <span className="font-bold">OOSE by OPSWAT</span> is a certification program focused on
                 cybersecurity for operational technology.
               </p>
@@ -85,7 +85,7 @@ export function TopicsSection({ className }: TopicsSectionProps) {
               <h4 className="font-inter text-2xl font-semibold tracking-[-0.7px] leading-[1.5em] text-left text-[rgb(0,17,34)] mt-[6px] mb-5">
                 OCEG GRCP
               </h4>
-              <p className="font-inter text-xl font-medium tracking-[-0.5px] leading-[1.4em] text-left text-[rgb(136,136,136)] max-w-[380px]">
+              <p className="font-inter text-xl font-medium tracking-[-0.5px] leading-[1.4em] text-left text-[rgb(136,136,136)] max-w-[600px] md:max-w-[380px]">
                 <span className="font-bold">OCEG GRCP</span> is a certification validating core knowledge in
                 governance, risk, and compliance for principled performance.
               </p>

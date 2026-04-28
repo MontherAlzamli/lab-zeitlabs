@@ -74,13 +74,13 @@ export function CourseCard({
           </div>
 
           {/* Title */}
-          <h4 className="line-clamp-1 w-full whitespace-pre-wrap break-words m-0 font-sans font-medium text-[16px] tracking-[-0.02em] leading-[1.4em] text-foreground">
+          <h4 className="line-clamp-1 w-full whitespace-pre-wrap break-words m-0 font-sans font-medium text-[16px] xl:text-[20px] tracking-[-0.02em] leading-[1.4em] text-foreground">
             {title}
           </h4>
 
           {/* Description */}
           {description && (
-            <p className="line-clamp-2 w-full whitespace-pre-wrap break-words opacity-80 m-0 font-inter text-[14px] font-normal tracking-[-0.01em] leading-[24px] text-foreground">
+            <p className="line-clamp-2 w-full whitespace-pre-wrap break-words opacity-80 m-0 font-inter text-[14px] font-normal tracking-[-0.01em] leading-[24px] text-start text-black no-underline normal-case">
               {description}
             </p>
           )}
@@ -102,7 +102,7 @@ export function CourseCard({
                 >
                   <path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" />
                 </svg>
-                <span className="whitespace-pre">{level}</span>
+                <span className="whitespace-pre font-inter text-[14px] font-normal tracking-[-0.01em] leading-[24px] text-start text-black no-underline normal-case">{level}</span>
               </div>
             )}
           </div>
