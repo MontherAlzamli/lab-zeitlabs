@@ -98,7 +98,7 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
           <h2 className="text-foreground text-[32px] md:text-[42px] xl:text-[48px] mt-4 mb-4 font-display font-medium tracking-[-0.01em] leading-[1.2em]">
             Featured Courses
           </h2>
-          <p className="max-w-2xl mx-auto font-inter text-[15.5px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground">
+          <p className="max-w-2xl  mx-auto font-inter text-[15.7px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground">
             Our courses provide the essential knowledge to build and manage
             online learning platforms, with a special focus on Open edX and best
             practices in digital education

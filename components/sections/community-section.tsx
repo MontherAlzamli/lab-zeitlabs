@@ -10,7 +10,7 @@ export interface CommunitySectionProps {
 
 export function CommunitySection({ className }: CommunitySectionProps) {
   return (
-    <section className={cn("relative pb-7 md:pb-4 lg:pb-7 overflow-hidden sm:pt-6 md:pt-0", className)}>
+    <section className={cn("relative pb-7 sm:pb-0 md:pb-4 lg:pb-7 overflow-hidden sm:pt-0", className)}>
       <div className="max-w-[1250px] mx-auto px-0 md:px-6">
         <div
           className="text-center mb-20 sm:mb-6  md:mb-6  lg:mb-13"
@@ -29,7 +29,7 @@ export function CommunitySection({ className }: CommunitySectionProps) {
             }
             label="Our Programs"
           />
-          <h2 className="font-[Poppins] text-[32px] sm:text-[42px] font-medium tracking-[-0.03em] text-center text-foreground mt-4 mb-4">
+          <h2 className="font-[Poppins] text-[32px] font-medium tracking-[-0.03em] text-center text-foreground mt-4 mb-4">
             Featured Tracks
           </h2>
           <p className="max-w-[300px] min-[440px]:max-[500px]:max-w-[350px] min-[501px]:max-[549px]:max-w-[500px] min-[550px]:max-[640px]:max-w-[520px] min-[641px]:max-[700px]:max-w-[580px] min-[701px]:max-[750px]:max-w-[900px] sm:max-w-[700px] mx-auto min-[641px]:max-[768px]:mt-6">
