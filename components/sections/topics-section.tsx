@@ -28,7 +28,7 @@ export function TopicsSection({ className }: TopicsSectionProps) {
           <h2 className="font-[Poppins] md:font-sans text-[32px] md:text-[41px] font-medium tracking-[-0.01em]  text-center text-foreground mt-4 mb-4">
             Certify &amp; Acknowledge
           </h2>
-          <p className="max-w-[600px] min-[400px]:max-w-full mb-8 mx-auto tracking-normal text-center text-foreground">
+          <p className="max-w-[600px] min-[400px]:max-w-[550px] mb-8 mx-auto tracking-normal text-center text-foreground">
             Choose from an array of certificate designs and layouts, and leave
             your learners with proof and display of their newly acquired
             achievements
