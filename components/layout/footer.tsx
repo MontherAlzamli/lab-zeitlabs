@@ -9,7 +9,7 @@ export interface FooterProps {
 
 export function Footer({ className }: FooterProps) {
   return (
-    <footer className={cn("relative bg-white overflow-hidden md:pt-14 lg:pt-4 xl:pt-7", className)}>
+    <footer className={cn("relative bg-white overflow-hidden md:pt-14 lg:pt-4 xl:pt-6", className)}>
       {/* Background gradient blobs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
