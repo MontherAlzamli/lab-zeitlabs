@@ -69,7 +69,7 @@ export function Hero({ className }: HeroProps) {
           </h1>
 
           {/* Body */}
-          <p className="font-inter text-[16px] md:max-w-[600px] font-normal tracking-[-0.01em] leading-[1.6em] no-underline text-black w-full md:w-[98%] text-left">
+          <p className="font-inter text-[16px] font-normal tracking-[-0.01em] leading-[1.59em] no-underline text-black [word-spacing:-0.5px] text-left flex-none h-auto max-w-[600px] opacity-80 relative whitespace-pre-wrap w-full break-words z-[6]">
             {"Zeitlabs Laboratory is where ideas, educators, and organizations come together to explore and shape the future of online learning. We provide the tools, resources, and community to help you grow in this field"
               .split(" ")
               .map((word, i) => (
