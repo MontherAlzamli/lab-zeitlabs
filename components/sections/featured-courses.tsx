@@ -126,19 +126,13 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
         <div className="text-center mt-10 xl:mt-15">
           <Link
             href="/courses"
-            className="inline-flex items-center gap-2 btn-view-courses"
-            style={{
-              borderRadius: "100px",
-              border: "1px solid rgb(0, 0, 0)",
-              padding: "8px 24px",
-              textDecoration: "none",
-            }}
+            className="inline-flex items-center gap-2 btn-view-courses rounded-full border border-black px-6 py-2 no-underline"
           >
-            <p style={{ margin: 0, fontSize: "16px" }}>View Courses</p>
+            <p className="m-0 text-[16px]">View Courses</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"
-              style={{ width: "22px", height: "22px", flexShrink: 0 }}
+              className="w-[22px] h-[22px] shrink-0"
             >
               <g>
                 <path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z" />
