@@ -116,11 +116,11 @@ export function Hero({ className }: HeroProps) {
 
         {/* Right — Spline 3D embed */}
         <div className="hidden lg:flex flex-1 h-full relative z-10 items-center justify-center">
-          <div style={{ width: "1000px", height: "1000px", marginLeft: "-270px", marginTop: "100px" }}>
+          <div className="w-[1000px] h-[1000px] ml-[-270px] mt-[100px]">
             <iframe
               src="https://my.spline.design/cubic-f67fd92712ed023b465e5a99e5a791ba/"
               title="3D Cubes"
-              style={{ width: "100%", height: "100%", border: "none" }}
+              className="w-full h-full border-0"
               loading="lazy"
             />
           </div>
@@ -132,7 +132,7 @@ export function Hero({ className }: HeroProps) {
         <iframe
           src="https://my.spline.design/cubic-f67fd92712ed023b465e5a99e5a791ba/"
           title="3D Cubes"
-          style={{ width: "100%", height: "100%", border: "none" }}
+          className="w-full h-full border-0"
           loading="lazy"
         />
       </div>

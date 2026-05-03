@@ -99,8 +99,7 @@ export function Footer({ className }: FooterProps) {
           </div>
 
           <div
-            className="pt-6 lg:pb-5 xl:pb-10 -mx-5 md:-mx-10 min-[1001px]:mx-0"
-            style={{ borderTop: "1px solid rgb(92, 100, 112)" }}
+            className="pt-6 lg:pb-5 xl:pb-10 -mx-5 md:-mx-10 min-[1001px]:mx-0 border-t border-[rgb(92,100,112)]"
           >
             <p
               className="font-inter text-[16px] font-normal not-italic tracking-[-0.01em] leading-[1.6em] text-foreground text-center opacity-90 no-underline normal-case"
