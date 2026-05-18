@@ -79,8 +79,8 @@ export interface FeaturedCoursesProps {
 export function FeaturedCourses({ className }: FeaturedCoursesProps) {
   return (
     <section className={cn("relative py-16 overflow-hidden", className)}>
-      <div className="relative z-10 max-w-[1250px] mx-auto px-6">
-        <div className="text-center mb-12">
+      <div className="relative z-10 max-w-[1250px] mx-auto px-5 min-[810px]:px-6 min-[810px]:max-[1199px]:px-[36px] min-[1200px]:px-[60px] min-[1300px]:px-[25px] ">
+        <div className="text-center mb-12 min-[1200px]:mb-[60px] w-full mx-auto">
           <SectionLabel
             className="w-fit whitespace-nowrap"
             icon={
@@ -95,10 +95,10 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
             }
             label="Our Courses"
           />
-          <h2 className="text-foreground text-[32px] md:text-[42px] xl:text-[48px] mt-4 mb-4 font-display font-medium tracking-[-0.01em] leading-[1.2em]">
+          <h2 className="text-foreground text-[32px] min-[810px]:text-[42px] mt-4 mb-4 font-display font-medium tracking-[-0.01em] leading-[1.2em] min-[810px]:max-[1199px]:[font-family:Poppins,'Poppins_Placeholder',sans-serif] min-[810px]:max-[1199px]:tracking-[-1.26px] min-[810px]:max-[1199px]:leading-[50.4px] min-[1200px]:[font-family:Poppins,'Poppins_Placeholder',sans-serif] min-[1200px]:tracking-[-1.26px] min-[1200px]:leading-[50.4px]">
             Featured Courses
           </h2>
-          <p className="max-w-2xl  mx-auto font-inter text-[15.7px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground">
+          <p className="max-w-2xl  mx-auto text-[16px] font-normal tracking-[-0.01em] leading-[1.6em] text-foreground min-[810px]:max-[1199px]:[font-family:Inter,sans-serif] min-[810px]:max-[1199px]:tracking-[-0.16px] min-[810px]:max-[1199px]:leading-[25.6px] min-[1200px]:[font-family:Inter,sans-serif] min-[1200px]:tracking-[-0.16px] min-[1200px]:leading-[25.6px]">
             Our courses provide the essential knowledge to build and manage
             online learning platforms, with a special focus on Open edX and best
             practices in digital education
@@ -114,9 +114,12 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
                 "radial-gradient(ellipse 50% 55% at 50% 50%, #dde9f8 0%, transparent 100%)",
             }}
           />
-          <div className="relative grid grid-cols-1 tablet:grid-cols-2 xl:grid-cols-3 gap-7">
+          <div className="relative grid grid-cols-1 min-[810px]:grid-cols-2 min-[1200px]:grid-cols-3 gap-7 min-[810px]:max-[1199px]:gap-[30px] min-[810px]:max-[1199px]:px-1 min-[1200px]:gap-[30px]">
             {COURSES.map((course, index) => (
-              <div key={course.slug} className={index >= 2 ? "tablet:hidden xl:block" : ""}>
+              <div
+                key={course.slug}
+                className={index >= 2 ? "min-[810px]:hidden min-[1200px]:block" : ""}
+              >
                 <CourseCard {...course} />
               </div>
             ))}
@@ -126,9 +129,9 @@ export function FeaturedCourses({ className }: FeaturedCoursesProps) {
         <div className="text-center mt-10 xl:mt-15">
           <Link
             href="/courses"
-            className="inline-flex items-center gap-2 btn-view-courses rounded-full border border-black px-6 py-2 no-underline"
+            className="inline-flex items-center gap-2 btn-view-courses rounded-full border border-black w-[179.97px] h-[44px] px-[18px] no-underline min-[810px]:max-[1199px]:[font-family:Inter,'Inter_Placeholder',sans-serif] min-[810px]:max-[1199px]:tracking-[-0.16px] min-[810px]:max-[1199px]:leading-[19.2px] min-[1200px]:[font-family:Inter,'Inter_Placeholder',sans-serif] min-[1200px]:tracking-[-0.16px] min-[1200px]:leading-[19.2px] min-[1200px]:justify-center min-[1200px]:font-medium"
           >
-            <p className="m-0 text-[16px]">View Courses</p>
+            <p className="m-0 text-[16px] min-[810px]:max-[1199px]:flex-1">View Courses</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"

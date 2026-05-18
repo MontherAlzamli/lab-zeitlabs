@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "../ui/logo";
 import { MenuIcon } from "./menu-icon";
@@ -21,18 +22,31 @@ export function Navbar({ className }: NavbarProps) {
   return (
     <header
       className={cn(
-        "bg-white md:bg-transparent lg:h-[80px] sticky top-0 md:relative z-[9999] isolate w-full px-5 xl:px-6 min-[1400px]:px-12 2xl:px-0 max-w-[1300px] mx-auto",
+        "bg-white min-[810px]:bg-transparent min-[810px]:h-[80px] sticky top-0 min-[810px]:relative z-[9999] isolate mx-0 px-5 min-[810px]:mx-5 min-[810px]:px-0 min-[1200px]:mx-auto min-[1200px]:py-4 max-w-[1300px]",
         className,
       )}
     >
-      <div className="flex justify-between items-center h-[68.19px] md:h-full max-w-full mx-auto">
+      <div className="flex justify-between items-center h-[68.19px] min-[810px]:h-full max-w-full mx-auto">
         {/* Logo + desktop nav links */}
         <div className="flex items-center justify-between w-full">
-          <Link href="/" className="flex-shrink-0 mr-20">
-            <Logo />
+          <Link href="/" className="flex-shrink-0 mr-20 min-[810px]:mr-0 min-[1200px]:mr-[93px]">
+            <div className="py-[3px]">
+              <Image
+                src="/assets/images/nav-logo.png"
+                alt="Zeitlabs Laboratory"
+                width={133}
+                height={36}
+                priority
+                className="h-auto w-[133px] min-[1200px]:hidden"
+              />
+              <Logo
+                className="hidden min-[1200px]:flex"
+                imageClassName="h-8 w-auto"
+              />
+            </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-4 xl:ml-3">
+          <nav className="hidden min-[810px]:flex items-center gap-4 min-[810px]:max-[1200px]:gap-2">
             {NAV_LINKS.map((link) => (
               <div
                 key={link.href}
@@ -48,7 +62,7 @@ export function Navbar({ className }: NavbarProps) {
             ))}
           </nav>
         {/* Desktop auth buttons */}
-        <div className="hidden md:flex items-center justify-center px-0 py-2">
+        <div className="hidden min-[810px]:flex items-center justify-center px-0 py-2">
           <a
             href="https://apps.lab.zeitlabs.com/authn/login"
             className="inline-flex items-center font-inter font-[500] text-body py-[11px] px-[22px] rounded-[24px] text-foreground bg-transparent hover:opacity-60 transition-opacity duration-200 cursor-pointer"
@@ -69,14 +83,14 @@ export function Navbar({ className }: NavbarProps) {
         <MenuIcon
           isOpen={isOpen}
           onClick={() => setIsOpen((v) => !v)}
-          className="md:hidden"
+          className="min-[810px]:hidden"
         />
       </div>
 
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden grid absolute top-full left-0 w-full z-[9999] transition-[grid-template-rows] duration-300 ease-in-out",
+          "min-[810px]:hidden grid absolute top-full left-0 w-full z-[9999] transition-[grid-template-rows] duration-300 ease-in-out",
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
         )}
       >
