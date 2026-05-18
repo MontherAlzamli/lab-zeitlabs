@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm ls *)",
+      "Bash(Select-Object -First 40)",
+      "Bash(identify public/assets/images/nav-logo.png public/assets/images/logo.png)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "framer"
+  ]
 }

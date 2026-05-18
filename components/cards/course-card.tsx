@@ -35,7 +35,7 @@ export function CourseCard({
       className={cn("group block no-underline rounded-[10px]", className)}
     >
       <div
-        className="w-full transition-transform duration-500 ease-out [transform:perspective(1200px)] group-hover:[transform:perspective(1200px)_rotateY(-20deg)] rounded-3xl border-[3px] border-white pt-6 px-6 pb-8 [transform-style:preserve-3d]"
+        className="w-full transition-transform duration-500 ease-out [transform:perspective(1200px)] group-hover:[transform:perspective(1200px)_rotateY(-20deg)] rounded-3xl pt-6 px-6 pb-8 [transform-style:preserve-3d]"
         style={{
           background: "linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 100%)",
           boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px 0px",
@@ -67,14 +67,17 @@ export function CourseCard({
               ))}
             </div>
 
-            <div className="flex items-center w-min shrink-0">
-              <span className="whitespace-pre text-[16px] md:text-[19px] font-sans">$</span>
-              <span className="whitespace-pre text-[16px] md:text-[19px] font-sans">{price}</span>
+            <div
+              className=" flex items-center w-min shrink-0 font-medium not-italic leading-[22.4px] tracking-[-0.32px]"
+              style={{ fontFamily: 'Poppins, "Poppins Placeholder", sans-serif' }}
+            >
+              <span className="whitespace-pre text-[16px] min-[1200px]:text-[19px]">$</span>
+              <span className="whitespace-pre text-[16px] min-[1200px]:text-[19px]">{price}</span>
             </div>
           </div>
 
           {/* Title */}
-          <h4 className="line-clamp-1 w-full whitespace-pre-wrap break-words m-0 font-sans font-medium text-[16px] xl:text-[20px] tracking-[-0.02em] leading-[1.4em] text-foreground">
+          <h4 className="line-clamp-1 w-full whitespace-pre-wrap break-words m-0 font-sans font-medium text-[16px] min-[1200px]:text-[20px] tracking-[-0.02em] leading-[1.4em] text-foreground">
             {title}
           </h4>
 
@@ -88,8 +91,13 @@ export function CourseCard({
           {/* Badge & level */}
           <div className="flex flex-wrap items-center justify-between w-full">
             {badge && (
-              <div className="bg-primary-muted rounded-lg py-1 px-4 overflow-hidden flex items-center justify-center shrink-0">
-                <span className="text-primary whitespace-pre text-sm">{badge}</span>
+              <div className="bg-primary-muted rounded-lg py-1 px-4 w-[89px] h-[32px] overflow-hidden flex items-center justify-center shrink-0">
+                <span
+                  className="text-primary whitespace-pre text-sm"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  {badge}
+                </span>
               </div>
             )}
 

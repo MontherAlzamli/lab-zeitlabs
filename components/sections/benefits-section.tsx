@@ -90,7 +90,7 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
   return (
     <section
       className={cn(
-        "py-13 relative overflow-hidden bg-[radial-gradient(ellipse_60%_140%_at_50%_50%,#ebe8ff_0%,#ffffff_50%)]",
+        "py-13 max-[809px]:pt-16 min-[810px]:max-[1199px]:pt-16 relative overflow-hidden bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,#ebe8ff_0%,transparent_70%),radial-gradient(ellipse_90%_35%_at_50%_25%,#f3f1ff_0%,transparent_80%),radial-gradient(ellipse_100%_40%_at_50%_50%,#e7e3ff_0%,transparent_80%),radial-gradient(ellipse_80%_35%_at_50%_85%,#ebe8ff_0%,transparent_80%),linear-gradient(#ffffff,#ffffff)] min-[810px]:bg-[radial-gradient(ellipse_80%_55%_at_50%_60%,#ebe8ff_0%,#ffffff_100%)]",
         className,
       )}
     >
@@ -109,7 +109,7 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
           label="Boost Your Skills"
         />
 
-        <h2 className="mt-4 mb-4 max-w-xl mx-auto font-display text-[32px] md:text-[42px] font-medium tracking-[-0.01em] leading-[1.2em] text-center text-black no-underline normal-case">
+        <h2 className="font-['Poppins','Poppins_Placeholder',sans-serif] mt-4 mb-4 max-w-xl mx-auto text-[32px] min-[810px]:text-[42px] font-medium tracking-[-0.03em] leading-[1.2em] text-center text-black no-underline normal-case not-italic">
           Courses Designed for Educators, Technologists &amp; Innovators
         </h2>
 
@@ -121,7 +121,7 @@ export function BenefitsSection({ className }: BenefitsSectionProps) {
 
         <div className="flex items-center gap-4 md:gap-12 mb-8 w-full max-w-8xl mx-auto">
           <div className="flex-1 h-px bg-foreground/30" />
-          <p className="text-body text-[#48464c] md:whitespace-nowrap text-center max-w-[180px]  sm:max-w-none">
+          <p className="font-['Inter',sans-serif] text-body text-[#48464c] md:whitespace-nowrap text-center max-w-[180px]  sm:max-w-none">
             Our partners in the education endeavor
           </p>
           <div className="flex-1 h-px bg-foreground/30" />
