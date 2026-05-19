@@ -129,7 +129,7 @@ export function Hero({ className }: HeroProps) {
         </div>
 
         {/* Right — Spline 3D embed */}
-        <div className="hidden min-[1200px]:flex flex-1 h-full relative z-10 items-center justify-center">
+        <div className="hidden min-[1200px]:flex flex-1 h-full relative z-10 items-center justify-center pointer-events-none">
           <div className="w-[1000px] h-[1000px] ml-[-270px] mt-[100px]">
             <iframe
               src="https://my.spline.design/cubic-f67fd92712ed023b465e5a99e5a791ba/"
@@ -141,7 +141,7 @@ export function Hero({ className }: HeroProps) {
         </div>
 
         {/* Tablet — Spline 3D embed */}
-        <div className="hidden min-[810px]:max-[1200px]:flex flex-1 h-full relative z-20 items-center justify-center">
+        <div className="hidden min-[810px]:max-[1200px]:flex flex-1 h-full relative z-20 items-center justify-center pointer-events-none">
           <div className="w-[1000px] h-[1000px] ml-[-600px] mt-[-200px]">
             <iframe
               src="https://my.spline.design/cubic-f67fd92712ed023b465e5a99e5a791ba/"
